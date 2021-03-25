@@ -28,3 +28,4 @@ function InfoBox({ title, cases, total, active, isRed, ...props }) {
 }
 
 export default InfoBox;
+

@@ -73,10 +73,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="app_left">
-        <div className="app_header">
-          <h1>Samar COVID-19 Tracker</h1>
-          <FormControl className="app_dropdown">
+      <div className="app__left">
+        <div className="app__header">
+          <h1>COVID-19 Tracker</h1>
+          <FormControl className="app__dropdown">
             <Select
               variant="outlined"
               value={country}
@@ -89,7 +89,7 @@ const App = () => {
             </Select>
           </FormControl>
         </div>
-        <div className="app_stats">
+        <div className="app__stats">
           <InfoBox
             onClick={(e) => setCasesType("cases")}
             title="Coronavirus Cases"
@@ -121,9 +121,9 @@ const App = () => {
           zoom={mapZoom}
         />
       </div>
-      <Card className="app_right">
+      <Card className="app__right">
         <CardContent>
-          <div className="app_information">
+          <div className="app__information">
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
             <h3>Worldwide new {casesType}</h3>
