@@ -8,7 +8,7 @@ const casesTypeColors = {
     option: { color:"#cc1034", fillColor: "#cc1034" },
   },
   recovered: {
-    multiplier: 500,
+    multiplier: 400,
     option: { color:"#7dd71d", fillColor: "#7dd71d" },
   },
   deaths: {

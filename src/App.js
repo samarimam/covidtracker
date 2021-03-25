@@ -66,8 +66,10 @@ const App = () => {
       .then((data) => {
         setInputCountry(countryCode);
         setCountryInfo(data);
-        setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-        setMapZoom(4);
+        countryCode === "worldwide"
+          ? setMapCenter([20.5937, 78.9629])
+          : setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+        countryCode === "worldwide" ? setMapZoom(3) : setMapZoom(4);
       });
   };
 
